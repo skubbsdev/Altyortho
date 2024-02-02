@@ -1,0 +1,29 @@
+# Node
+node_modules
+
+# public
+public/build/manifest.json
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore environment files
+*.env
+
+# ignore DS_Store
+*.DS_Store
+
+# ignore VSCode
+.vscode/*
+
+# ignore composer
+composer.lock
+
+# ignore packages
+package-lock.json
+yarn.lock
+
+# ignore vendors
+vendor/*

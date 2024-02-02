@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+
+    <title>AltyOrtho Style Guidelines</title>
+
+    <link rel="preload" as="style" href="/public/build/assets/app.min.css">
+    <link rel="stylesheet" href="/public/build/assets/app.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div id="top-info" class="bg-warning text-white position-relative z-1045">
+            <div class="container py-2 py-xl-1">
+                <ul class="navbar-nav flex-row flex-wrap justify-content-end ms-md-auto">
+                    <li class="nav-item col-auto">
+                        <a class="link-light" href="//api.whatsapp.com/send?phone=6281221888201" title="WhatsApp" rel="nofollow">WhatsApp</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav id="mainNavHeader" class="navbar navbar-expand-xl bg-body z-1045" aria-label="Main Menu">
+            <div class="container">
+                <h1 class="lead fw-semibold mb-0 lh-1">
+                    <a title="Homepage" class="navbar-brand link-success d-inline-block me-0" href="/">
+                        <img class="bi" src="/img/logo.svg" alt="Logo"> ALTYOrtho
+                    </a>
+                </h1>
+
+                <button class="navbar-toggler p-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#MainMenuOffCanvas" aria-controls="MainMenuOffCanvas"
+                    aria-label="Toggle docs navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                        </path>
+                    </svg>
+                </button>
+
+                <div class="offcanvas offcanvas-end bg-softpink" tabindex="-1" id="MainMenuOffCanvas">
+                    <div class="offcanvas-header">
+                        <div class="d-block">
+                            <h3 class="fs-2 text-success lead fw-semibold"><span class="text-body">Navigation</span></h3>
+                        </div>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link px-xl-3 active" href="/">Homepage</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-xl-3" href="#">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-xl-3" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-xl-3" href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex mt-3 mt-xl-0">
+                            <a href="https://github.com/skubbsdev/Altyortho"
+                                class="btn btn-outline-secondary me-xxl-3 me-2 mb-3 mb-xl-0">Clone</a>
+                            <a href="https://stackblitz.com/github/skubbsdev/Altyortho/tree/main?file=src%2Findex.htm"
+                                class="btn btn-primary mb-3 mb-xl-0">Preview</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="app" class="position-relative">
+        <div id="content">
+            <section id="page-header" class="bg-primary">
+                <div class="container py-6 py-xl-8">
+                    <h1 class="text-white display-4 fw-bold"><span class="text-success">ALTYOrtho</span> style guidelines</h1>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="py-4">
+        <div class="container">
+            <p class="text-muted mb-0">Created and by <a href="https://arthurimmanuel.com">Arthur Immanuel</a></p>
+        </div>
+    </footer>
+
+    <link rel="modulepreload" href="/public/build/assets/app.min.js">
+    <script type="module" src="/public/build/assets/app.min.js"></script>
+    <link rel="modulepreload" href="/public/build/assets/swiper-bundle.min.js">
+    <script type="module" src="/public/build/assets/swiper-bundle.min.js"></script>
+</body>
+
+</html>
