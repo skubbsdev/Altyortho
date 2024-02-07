@@ -10,6 +10,8 @@
 
     <link rel="preload" as="style" href="/public/build/assets/app.min.css">
     <link rel="stylesheet" href="/public/build/assets/app.min.css">
+    <link rel="preload" as="style" href="/public/vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/public/vendor/fontawesome/css/all.min.css">
 </head>
 
 <body>
@@ -78,9 +80,112 @@
     </header>
     <main id="app" class="position-relative">
         <div id="content">
-            <section id="page-header" class="bg-primary">
-                <div class="container py-6 py-xl-8">
+            <section id="page-header" class="bg-primary py-6 py-xl-8">
+                <div class="container">
                     <h1 class="text-white display-4 fw-bold"><span class="text-success">ALTYOrtho</span> style guidelines</h1>
+                </div>
+            </section>
+            <section id="forms" class="py-6 py-xl-8">
+                <div class="container">
+                    <h1 class="text-primary display-4 fw-bold">Forms</h1>
+                    <form action="/">
+                        <div class="row g-4">
+                            <div class="col-xl-6">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" class="form-control border border-gray border-end-0" placeholder="Your Name" aria-label="Name" required>
+                                    <span class="input-group-text text-body-tertiary bg-white fs-6 fa-light fa-user lh-lg"></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="input-group input-group-lg">
+                                    <input type="email" class="form-control border border-gray border-end-0" placeholder="Your Email" aria-label="Email" required>
+                                    <span class="input-group-text text-body-tertiary bg-white fs-6 fa-light fa-envelope lh-lg"></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" class="form-control border border-gray border-end-0" placeholder="Phone Number" aria-label="Phone" required>
+                                    <span class="input-group-text text-body-tertiary bg-white fs-6 fa-light fa-phone lh-lg"></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" class="form-control border border-gray border-end-0" placeholder="Date of Birth" aria-label="Date" required>
+                                    <span class="input-group-text text-body-tertiary bg-white fs-6 fa-light fa-calendar-days lh-lg"></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" class="form-control border border-gray border-end-0" placeholder="NRIC / Passport No." aria-label="Passport" required>
+                                    <span class="input-group-text text-body-tertiary bg-white fs-6 fa-light fa-passport lh-lg"></span>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <h2 class="display-4 fw-bold mb-0">Appointment Details</h2>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="input-group input-group-lg">
+                                    <select class="form-select" aria-label="Purpose of Visit" required>
+                                        <option selected>Purpose of Visit</option>
+                                        <option value="Purpose One">Purpose One</option>
+                                        <option value="Purpose Two">Purpose Two</option>
+                                        <option value="Purpose Three">Purpose Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="input-group input-group-lg">
+                                    <select class="form-select" aria-label="Specialty">
+                                        <option selected>Choose Specialty</option>
+                                        <option value="Specialty One">Specialty One</option>
+                                        <option value="Specialty Two">Specialty Two</option>
+                                        <option value="Specialty Three">Specialty Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="input-group input-group-lg">
+                                    <select class="form-select" aria-label="Doctor">
+                                        <option selected>Choose Doctor</option>
+                                        <option value="Doctor One">Doctor One</option>
+                                        <option value="Doctor Two">Doctor Two</option>
+                                        <option value="Doctor Three">Doctor Three</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" class="form-control border border-gray border-end-0" placeholder="Preferred Appointment Date" aria-label="Preferred Date">
+                                    <span class="input-group-text text-body-tertiary bg-white fs-6 fa-light fa-calendar-days lh-lg"></span>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="input-group input-group-lg">
+                                    <select class="form-select" aria-label="Doctor">
+                                        <option selected>Preferred Time Slot</option>
+                                        <option value="AM">AM</option>
+                                        <option value="PM">PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="input-group input-group-lg">
+                                    <textarea class="form-control" id="message" placeholder="Type Your Message Here" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="tos" checked>
+                                    <label class="form-check-label" for="flexCheckChecked"><span class="text-danger">*</span> We care about your privacy. By checking this box you confirm that you have read and understood our privacy policy and consent to provide your personal information to us.</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-lg btn-success fs-5" type="button">Book Appointment</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </section>
         </div>
