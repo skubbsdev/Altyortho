@@ -5,7 +5,9 @@
 }
 
 :root {
-    --swiper-theme-color: #f48120
+    --swiper-theme-color: #62c3ae;
+    --swiper-pagination-bullet-width: .5rem;
+    --swiper-pagination-bullet-size: .5rem;
 }
 
 :host {
@@ -137,9 +139,30 @@ button.swiper-pagination-bullet {
     display: none !important
 }
 
+.swiper-pagination-bullet-active::before {
+	content: '';
+	background: var(--swiper-theme-color);
+	position: absolute;
+	width: .5rem;
+	height: .5rem;
+	border-radius: 50rem;
+	vertical-align: middle;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
 .swiper-pagination-bullet-active {
     opacity: var(--swiper-pagination-bullet-opacity, 1);
-    background: var(--swiper-pagination-color, var(--swiper-theme-color))
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+	background: transparent;
+	border: 1px solid var(--swiper-theme-color);
+	width: 1rem;
+	height: 1rem;
+	vertical-align: middle;
+	position: relative;
 }
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
