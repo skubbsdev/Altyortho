@@ -185,7 +185,6 @@ button.swiper-pagination-bullet {
 
 .swiper-free-mode>.swiper-wrapper {
     transition-timing-function: ease-out;
-    margin: 0 auto
 }
 
 .swiper-grid>.swiper-wrapper {
